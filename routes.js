@@ -30,6 +30,6 @@ routes.get("/usuarios", UsuarioController.index)
 
 //Rota de Proposta
 routes.get("/proposta", PropostaController.index)
-      .post("/proposta", login, PropostaController.store);
+      .post("/proposta", PropostaController.store);
 
 module.exports = routes;

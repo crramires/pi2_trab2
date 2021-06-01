@@ -5,7 +5,7 @@ module.exports = {
 
     async index(req, res) {
 
-        const prop = await knex.select("p.id", "p.nome_comprador", "p.proposta", "j.nome as jogos")
+        const prop = await knex.select("p.id", "p.nome_comprador", "p.prop", "j.nome as jogos")
                                 .from("proposta as p")
                                 .leftJoin("jogos as j", "p.id", "j.id")
                                 .orderBy("p.id", "desc")
@@ -28,7 +28,7 @@ module.exports = {
 
             const newProp = await knex("proposta").insert({
                 nome_comprador,
-                proposta,
+                prop,
                 jogo_id,
             });
             
