@@ -15,9 +15,9 @@ module.exports = {
 
     async store(req, res) {
 
-        const { nome_comprador, proposta, jogo_id} = req.body;
+        const { nome_comprador, prop, jogo_id} = req.body;
 
-        if(!nome_comprador || !proposta || !jogo_id) {
+        if(!nome_comprador || !prop || !jogo_id) {
 
             res.status(400).json({erro: "Dados inválidos"});
             return;
