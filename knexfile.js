@@ -5,9 +5,9 @@ module.exports = {
   development: {
     client: 'mysql2',
     connection: {
-      host:     '127.0.0.1',
-      database: 'gameHouse',
-      user:     'root',
+      host:     'freedb.tech',
+      database: 'freedbtech_gameHouse',
+      user:     'freedbtech_crramires',
       password: '1234'
     },
     migration: {
